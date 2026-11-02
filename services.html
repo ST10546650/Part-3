@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <!-- Character encoding for the webpage -->
+    <meta charset="UTF-8">
+
+    <!-- Makes the website responsive on different screen sizes -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Services | BackroomFind Rental Services</title>
+    <meta name="description"
+          content="Explore room listings, accommodation support, rental enquiries and landlord listing services.">
+    <meta name="keywords"
+          content="room listings, landlord services, accommodation support">
+
+    <!-- External CSS stylesheet -->
+    <link rel="stylesheet" href="Style.css">
+
+</head>
+
+<body>
+
+    <!-- ================= HEADER SECTION ================= -->
+    <header>
+
+        <!-- Main navigation menu -->
+        <nav>
+
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="services.html">Services</a>
+            <a href="enquiry.html">Enquiry</a>
+            <a href="contact.html">Contact</a>
+
+        </nav>
+
+    </header>
+
+    <!-- ================= MAIN CONTENT ================= -->
+    <main>
+
+        <!-- Services Introduction Section -->
+        <section>
+
+            <h1>Our Services</h1>
+
+            <p>
+                BackroomFind Property Rentals provides affordable
+                long-term accommodation solutions for tenants and
+                direct communication opportunities for landlords.
+                Our services are designed to simplify the rental
+                process and improve accessibility to quality housing.
+            </p>
+
+        </section>
+
+        <!-- Services Table Section -->
+        <section>
+
+            <h2>Services Offered</h2>
+
+            <img src="Images/photo-1-1.jpg"
+                 alt="BackroomFind property listing image"
+                 class="service-image">
+
+
+            <table>
+
+                <tr>
+                    <th>Service</th>
+                    <th>Description</th>
+                </tr>
+
+                <tr>
+                    <td>Long-Term Rentals</td>
+                    <td>
+                        Affordable rental rooms for students,
+                        professionals, families and individuals
+                        seeking long-term accommodation.
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>Property Listings</td>
+                    <td>
+                        Browse available rental rooms with detailed
+                        descriptions, pricing information and room
+                        availability status.
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>Property Maintenance</td>
+                    <td>
+                        Regular inspections and maintenance to ensure
+                        rooms remain safe, clean and comfortable.
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>Room Viewings</td>
+                    <td>
+                        Schedule appointments to inspect rental rooms
+                        before making a rental decision.
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>Tenant Support</td>
+                    <td>
+                        Direct communication with landlords to resolve
+                        rental queries quickly and efficiently.
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>WhatsApp Support</td>
+                    <td>
+                        Convenient communication through WhatsApp for
+                        enquiries, room availability and support.
+                    </td>
+                </tr>
+
+            </table>
+
+            <button type="button" onclick="openModal()">
+                View Details
+            </button>
+
+            <div id="roomModal" class="modal" hidden>
+
+                <div class="modal-content">
+
+                    <button type="button"
+                            class="close"
+                            onclick="closeModal()"
+                            aria-label="Close room details">
+                        &times;
+                    </button>
+
+                    <h2>Soweto Room</h2>
+
+                    <p>Monthly Rental: R2500</p>
+
+                    <p>Electricity Included</p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- Benefits Section -->
+        <section>
+
+            <h2>Benefits of Our Services</h2>
+
+        
+
+            <ul>
+
+                <li>Affordable long-term accommodation options.</li>
+
+                <li>Easy access to property information.</li>
+
+                <li>Direct landlord communication.</li>
+
+                <li>No agency or middleman fees.</li>
+
+                <li>Quick and convenient enquiry process.</li>
+
+                <li>Mobile-friendly rental platform.</li>
+
+            </ul>
+
+        </section>
+
+        <section class="faq-section">
+
+            <h2>Frequently Asked Questions</h2>
+
+            <button class="accordion">
+                How do I enquire about a room?
+            </button>
+
+            <div class="panel">
+                <p>
+                    Complete the enquiry form.
+                </p>
+            </div>
+
+            <button class="accordion">
+                Can landlords advertise?
+            </button>
+
+            <div class="panel">
+                <p>
+                    Yes. Contact us for listing options.
+                </p>
+            </div>
+
+        </section>
+
+    </main>
+
+    <!-- ================= FOOTER SECTION ================= -->
+    <footer>
+
+        <p>
+            <strong>Phone:</strong> +27 71 000 0000
+        </p>
+
+        <p>
+            <strong>Email:</strong> info@backroomfind.co.za
+        </p>
+
+        <p>
+            <strong>WhatsApp:</strong> +27 71 000 0000
+        </p>
+
+        <p>
+            &copy; 2026 BackroomFind Property Rentals.
+            All Rights Reserved.
+        </p>
+
+    </footer>
+
+    <script src="script.js" defer></script>
+
+</body>
+
+</html>

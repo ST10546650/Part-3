@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <!-- Character encoding for the webpage -->
+    <meta charset="UTF-8">
+
+    <!-- Makes the website responsive on mobile devices -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Room Enquiry | BackroomFind</title>
+    <meta name="description"
+          content="Submit a room enquiry and receive availability and rental cost information.">
+    <meta name="keywords"
+          content="room enquiry, rental enquiry, room availability">
+
+    <!-- External CSS stylesheet -->
+    <link rel="stylesheet" href="Style.css">
+
+</head>
+
+<body>
+
+    <!-- ================= HEADER SECTION ================= -->
+    <header>
+
+        <!-- Main navigation menu -->
+        <nav>
+
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="services.html">Services</a>
+            <a href="enquiry.html">Enquiry</a>
+            <a href="contact.html">Contact</a>
+
+        </nav>
+
+    </header>
+
+    <!-- ================= MAIN CONTENT ================= -->
+    <main>
+
+        <!-- Page Heading Section -->
+        <section>
+
+            <h1>Rental Enquiry Form</h1>
+
+            <p>
+                Complete the enquiry form below to request information
+                about our available rental rooms. A member of the
+                BackroomFind team will contact you as soon as possible.
+            </p>
+
+        </section>
+
+        <section class="enquiry-section">
+
+            <h2>Room Enquiry Form</h2>
+
+            <form id="enquiryForm">
+
+                <label for="fullName">Full Name</label>
+                <input
+                    type="text"
+                    id="fullName"
+                    name="fullName"
+                    required>
+
+                <label for="phone">Phone Number</label>
+                <input
+                    type="tel"
+                    id="phone"
+                    name="phone"
+                    placeholder="0812345678"
+                    required>
+
+                <label for="email">Email Address</label>
+                <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    required>
+
+                <label for="location">Preferred Location</label>
+                <select id="location" name="location" required>
+                    <option value="">Select Location</option>
+                    <option value="2500">Johannesburg</option>
+                    <option value="3000">Pretoria</option>
+                    <option value="3500">Cape Town</option>
+                    <option value="2800">Durban</option>
+                </select>
+
+                <label for="roomType">Room Type</label>
+                <select id="roomType" name="roomType" required>
+                    <option value="">Select Room Type</option>
+                    <option value="500">Single Room</option>
+                    <option value="1000">Bachelor Room</option>
+                    <option value="1500">Double Room</option>
+                </select>
+
+                <label for="moveDate">Move-in Date</label>
+                <input
+                    type="date"
+                    id="moveDate"
+                    name="moveDate"
+                    required>
+
+                <label for="message">Additional Information</label>
+                <textarea
+                    id="message"
+                    name="message"
+                    rows="5"></textarea>
+
+                <button type="submit">Check Availability</button>
+
+            </form>
+
+            <div id="enquiryError" role="alert"></div>
+            <div id="enquiryResult" aria-live="polite"></div>
+
+        </section>
+
+        <!-- ================= WHY CHOOSE US SECTION ================= -->
+        <section>
+
+            <h2>Why Choose BackroomFind?</h2>
+
+            <ul>
+
+                <li>Affordable long-term accommodation</li>
+
+                <li>Direct communication with landlords</li>
+
+                <li>No agency fees involved</li>
+
+                <li>Simple and user-friendly process</li>
+
+                <li>Multiple room types available</li>
+
+            </ul>
+
+        </section>
+
+    </main>
+
+    <!-- ================= FOOTER SECTION ================= -->
+    <footer>
+
+        <p>
+            <strong>Phone:</strong> +27 71 000 0000
+        </p>
+
+        <p>
+            <strong>Email:</strong> info@backroomfind.co.za
+        </p>
+
+        <p>
+            <strong>WhatsApp:</strong> +27 71 000 0000
+        </p>
+
+        <p>
+            &copy; 2026 BackroomFind Property Rentals.
+            All Rights Reserved.
+        </p>
+
+    </footer>
+
+    <script src="script.js" defer></script>
+
+</body>
+
+</html>

@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <!-- Character encoding for the webpage -->
+    <meta charset="UTF-8">
+
+    <!-- Makes the website responsive on different screen sizes -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Contact BackroomFind | Get In Touch</title>
+    <meta name="description"
+          content="Contact BackroomFind regarding accommodation listings, room rentals and customer support.">
+    <meta name="keywords"
+          content="contact backroomfind, accommodation help, room rental support">
+
+    <!-- External CSS stylesheet -->
+    <link rel="stylesheet" href="Style.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css">
+
+</head>
+
+<body>
+
+    <!-- ================= HEADER SECTION ================= -->
+    <header>
+
+        <!-- Navigation menu used throughout the website -->
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="services.html">Services</a>
+            <a href="enquiry.html">Enquiry</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+
+    </header>
+
+    <!-- ================= MAIN CONTENT ================= -->
+    <main>
+
+        <!-- Contact Page Heading -->
+        <section>
+
+            <h1>Contact Us</h1>
+
+            <p>
+                We would love to hear from you. Contact us using the
+                information below or complete the contact form.
+            </p>
+
+        </section>
+
+        <!-- ================= CONTACT INFORMATION ================= -->
+        <section>
+
+            <h2>Contact Information</h2>
+
+            <p>
+                <strong>Phone:</strong> +27 71 000 0000
+            </p>
+
+            <p>
+                <strong>Email:</strong> info@backroomfind.co.za
+            </p>
+
+            <p>
+                <strong>WhatsApp:</strong> +27 71 000 0000
+            </p>
+
+        </section>
+
+        <!-- ================= LOCATION 1 ================= -->
+        <section>
+
+            <h2>Location 1 - Jabulani</h2>
+
+            <p>
+                Click the link below to view our Jabulani location.
+            </p>
+
+            <a href="https://maps.app.goo.gl/gWdnebnhXsDTSTk89"
+               target="_blank"
+               rel="noopener noreferrer">
+                View Jabulani Location
+            </a>
+
+        </section>
+
+        <!-- ================= LOCATION 2 ================= -->
+        <section>
+
+            <h2>Location 2 - Meadowlands</h2>
+
+            <p>
+                Click the link below to view our Meadowlands location.
+            </p>
+
+            <a href="https://maps.app.goo.gl/fAyqMSuUYAN6dxa56"
+               target="_blank"
+               rel="noopener noreferrer">
+                View Meadowlands Location
+            </a>
+
+        </section>
+
+        <section>
+
+            <h2>Find Rooms Near You</h2>
+
+            <div id="map"></div>
+
+        </section>
+
+        <section class="contact-section">
+
+            <h2>Contact BackroomFind</h2>
+
+            <form id="contactForm">
+
+                <label for="name">Full Name</label>
+                <input
+                    type="text"
+                    id="name"
+                    name="name"
+                    required>
+
+                <label for="emailContact">Email Address</label>
+                <input
+                    type="email"
+                    id="emailContact"
+                    name="email"
+                    required>
+
+                <label for="contactPhone">Phone Number</label>
+                <input
+                    type="tel"
+                    id="contactPhone"
+                    name="phone"
+                    required>
+
+                <label for="messageType">Message Type</label>
+                <select id="messageType" name="messageType">
+                    <option>General Enquiry</option>
+                    <option>Complaint</option>
+                    <option>Property Listing</option>
+                    <option>Feedback</option>
+                </select>
+
+                <label for="contactMessage">Message</label>
+                <textarea
+                    id="contactMessage"
+                    name="message"
+                    rows="6"
+                    required></textarea>
+
+                <button type="submit">Send Message</button>
+
+            </form>
+
+            <div id="contactError" role="alert"></div>
+            <div id="contactSuccess" aria-live="polite"></div>
+
+        </section>
+
+    </main>
+
+    <!-- ================= FOOTER SECTION ================= -->
+    <footer>
+
+        <p>
+            <strong>Phone:</strong> +27 71 000 0000
+        </p>
+
+        <p>
+            <strong>Email:</strong> info@backroomfind.co.za
+        </p>
+
+        <p>
+            <strong>WhatsApp:</strong> +27 71 000 0000
+        </p>
+
+        <p>
+            &copy; 2026 BackroomFind Property Rentals.
+            All Rights Reserved.
+        </p>
+
+    </footer>
+
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    <script src="map.js"></script>
+    <script src="script.js" defer></script>
+
+</body>
+
+</html>

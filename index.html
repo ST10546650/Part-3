@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <!-- Character encoding -->
+    <meta charset="UTF-8">
+
+    <!-- Responsive design -->
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>BackroomFind | Affordable Backroom Rentals</title>
+    <meta name="description"
+          content="Find affordable backroom rentals across South Africa.">
+    <meta name="keywords"
+          content="backroom rental, room to rent, accommodation">
+
+    <!-- External stylesheet -->
+    <link rel="stylesheet" href="Style.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css">
+
+</head>
+
+<body>
+
+    <!-- ================= HEADER SECTION ================= -->
+    <header>
+
+        <!-- Main Navigation Menu -->
+        <nav>
+
+            <a href="index.html">Home</a>
+
+            <a href="about.html">About</a>
+
+            <a href="services.html">Services</a>
+
+            <a href="enquiry.html">Enquiry</a>
+
+            <a href="contact.html">Contact</a>
+
+        </nav>
+
+    </header>
+
+    <!-- ================= MAIN CONTENT ================= -->
+    <main class="container">
+
+        <!-- Hero Section -->
+        <section class="hero">
+
+            <img src="Images/photo-3-1.jpg"
+                 alt="Modern backroom rental exterior">
+
+            <h1>Affordable Backroom Rentals</h1>
+
+            <p>
+                Find affordable, safe and reliable long-term
+                accommodation directly from the owner.
+            </p>
+
+            <a href="contact.html"
+               class="btn">
+                Contact Us
+            </a>
+
+        </section>
+
+        <!-- Room Search and Filters -->
+        <section class="search-section">
+
+            <label for="searchBox">Search rooms</label>
+            <input
+                type="text"
+                id="searchBox"
+                placeholder="Search by location">
+
+            <label for="filterLocation">Filter by location</label>
+            <select id="filterLocation">
+                <option value="">All locations</option>
+                <option value="Soweto">Soweto</option>
+                <option value="Pretoria">Pretoria</option>
+                <option value="Cape Town">Cape Town</option>
+            </select>
+
+            <label for="sortPrice">Sort by price</label>
+            <select id="sortPrice">
+                <option value="">Default order</option>
+                <option value="asc">Price: Low to high</option>
+                <option value="desc">Price: High to low</option>
+            </select>
+
+        </section>
+
+        <section>
+            <h2>Find Available Rooms</h2>
+            <div id="map"></div>
+        </section>
+
+        <!-- Available Rooms -->
+        <section class="content-section gallery">
+
+            <h2>Available Rooms</h2>
+
+            <div id="listingContainer" class="room-container"></div>
+
+        </section>
+
+        <!-- Why Choose Us -->
+        <section class="content-section">
+
+            <h2>Why Choose BackroomFind?</h2>
+
+            <ul>
+
+                <li>Affordable accommodation options.</li>
+
+                <li>Direct landlord communication.</li>
+
+                <li>No agency fees.</li>
+
+                <li>Easy room search and filtering.</li>
+
+                <li>Long-term rental solutions.</li>
+
+                <li>Mobile-friendly platform.</li>
+
+            </ul>
+
+        </section>
+
+    </main>
+
+    <!-- ================= FOOTER ================= -->
+    <footer>
+
+        <p>
+            <strong>Phone:</strong>
+            +27 71 000 0000
+        </p>
+
+        <p>
+            <strong>Email:</strong>
+            info@backroomfind.co.za
+        </p>
+
+        <p>
+            <strong>WhatsApp:</strong>
+            +27 71 000 0000
+        </p>
+
+        <p>
+            &copy; 2026 BackroomFind Property Rentals.
+            All Rights Reserved.
+        </p>
+
+    </footer>
+
+    <div id="lightbox"
+         class="lightbox-overlay"
+         role="dialog"
+         aria-modal="true"
+         aria-label="Enlarged room photo"
+         style="display: none;">
+        <button id="closeLightbox"
+                class="lightbox-close"
+                type="button"
+                aria-label="Close enlarged photo">
+            &times;
+        </button>
+        <img id="lightboxImg" alt="">
+    </div>
+
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    <script src="map.js"></script>
+    <script src="script.js" defer></script>
+
+</body>
+
+</html>
