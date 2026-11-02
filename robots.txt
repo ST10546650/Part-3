@@ -1,5 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap:
-https://yourwebsiteurl/sitemap.xml
+Sitemap: https://st10546650.github.io/Part-3/sitemap.xml

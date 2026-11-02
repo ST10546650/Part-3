@@ -128,7 +128,9 @@ document.addEventListener("DOMContentLoaded", () => {
 
     if (lightbox && lightboxImage && lightboxClose) {
         document.addEventListener("click", event => {
-            const image = event.target.closest(".lightbox-image");
+            const trigger = event.target.closest(".lightbox-trigger");
+            const image = event.target.closest(".lightbox-image") ||
+                (trigger ? trigger.querySelector("img") : null);
             if (image) {
                 lightboxImage.src = image.src;
                 lightboxImage.alt = image.alt;
