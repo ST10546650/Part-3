@@ -376,4 +376,24 @@ Supported devices:
 
 https://github.com/ST10546650/Part-3
 
-**Note:** GitHub Pages deployment has not yet been configured successfully. The repository is available through GitHub
+References
+Adobe (2024) Adobe Color. Available at: https://color.adobe.com (Accessed: 02 November 2026).
+
+Google Fonts (2024) Poppins. Available at: https://fonts.google.com/specimen/Poppins (Accessed: 02 November 2026).
+
+Leaflet (n.d.) Leaflet: JavaScript Library for Interactive Maps. Available at: https://leafletjs.com (Accessed: 02 November 2026).
+
+MDN Web Docs (n.d.) Client-side Form Validation. Available at: https://developer.mozilla.org/en-US/docs/Learn_web_development/Extensions/Forms/Form_validation (Accessed: 02 November 2026).
+
+MDN Web Docs (n.d.) CSS Grid Layout. Available at: https://developer.mozilla.org/en-US/docs/Web/CSS/Guides/Grid_layout (Accessed: 02 November 2026).
+
+OpenStreetMap (n.d.) OpenStreetMap. Available at: https://www.openstreetmap.org (Accessed: 02 November 2026).
+
+W3Schools (n.d.) Responsive Web Design. Available at: https://www.w3schools.com/css/css_rwd_intro.asp (Accessed: 02 November 2026).
+
+Netlify (2024) Netlify Docs. Available at: https://docs.netlify.com (Accessed: 02 November 2026).
+
+Nielsen Norman Group (2024) Mobile-first Design. Available at: https://www.nngroup.com (Accessed: 02 November 2026).
+
+WhatsApp (2024) WhatsApp Business Platform. Available at: https://business.whatsapp.com (Accessed: 02 November 2026).
+
